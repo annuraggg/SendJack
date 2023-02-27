@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - SendJack</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+  <button class="signup animate__animated animate__fadeInDown" onclick="window.location.href = 'signup'">Sign
+    Up</button>
+  <div class="main">
+    <div class="left animate__animated animate__fadeInDown">
+      <img src="img/logo_black.png" alt="" width="54px" onclick="window.location.href = '/'" style="cursor: pointer" />
+      <h3>Login</h3>
+      <p>Welcome Back!</p>
+
+      <form method="POST">
+
+
+        <div class="form__group field">
+          <input placeholder="Email ID" class="form__field" type="text" name="email" id="email"
+            onkeyup="validateEmail(); verifyFields();" />
+          <label class="form__label" for="name">Email ID</label>
+        </div>
+
+        <div class="form__group field">
+          <input class="form__field" type="password" placeholder="Password" name="password" id="pass"
+            onkeyup=" verifyFields();" />
+          <label class="form__label" for="password">Password</label>
+
+        </div>
+        <p class="forgot"><a href="/reset">Forgot Password?</a></p>
+        <br />
+        <input type="submit" value="LOGIN" class="disabledButton" id="submit" />
+      </form>
+      <button class="google" onclick="window.location.href='/auth/google'"><img src="img/google.png" alt="" width="20px">Sign In With Google</button>
+
+      <p style="color: red" id="errBox" class="errbox">&nbsp;{{message}}</p>
+
+    </div>
+    <div class="right animate__animated animate__zoomIn   ">
+
+    </div>
+  </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+  crossorigin="anonymous"></script>
+<script src="js/login.js"></script>
+
+</html>

@@ -1,0 +1,323 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<title>Login - SendJack</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<script src="https://kit.fontawesome.com/3af0056356.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/signup.css" />
+</head>
+
+<body>
+	<div id="first">
+		<button class="signup" onclick="window.location.href = 'login'">Login</button>
+		<div class="main">
+			<div class="left animate__animated animate__fadeInDown">
+				<img src="img/logo_black.png" alt="" width="54px" onclick="window.location.href = '/'"
+					style="cursor: pointer" />
+				<h3>Signup</h3>
+				<p>Get Started With Your Account!</p>
+
+				<button class="google" onclick="window.location.href= '/signup/google'">
+					<img src="img/google.png" alt="" width="20px" />
+					Sign Up With Google</button>
+
+				<form method="POST">
+					<input required="" type="email" placeholder="Your Email" id="email" onkeyup="validateEmail()" />
+					<button type="submit" class="disabledButton" id="submit" disabled>CONTINUE</button>
+				</form>
+
+				<p style="color: red" id="errBox" class="errbox">&nbsp;{{message}}</p>
+
+			</div>
+			<div class="right animate__animated animate__zoomIn">
+
+			</div>
+		</div>
+
+	</div>
+
+	<div id="first-loader">
+
+		<div class="socket">
+			<div class="gel center-gel">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c1 r1">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c2 r1">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c3 r1">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c4 r1">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c5 r1">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c6 r1">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+
+			<div class="gel c7 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+
+			<div class="gel c8 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c9 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c10 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c11 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c12 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c13 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c14 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c15 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c16 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c17 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c18 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c19 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c20 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c21 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c22 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c23 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c24 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c25 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c26 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c28 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c29 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c30 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c31 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c32 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c33 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c34 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c35 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c36 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c37 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="second">
+		<i class="fa-regular fa-envelope-open"></i>
+		<h2>Check Your Email</h2>
+		<p>We Have Sent a 6-Digit Verification Code </p>
+
+		<div class="prompt" id="prompt">
+			Enter the code generated on your email below to log in!
+		</div>
+
+		<form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+			<input type="text" id="digit-1" name="digit-1" data-next="digit-2" autocomplete="off" />
+			<input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1"
+				autocomplete="off" />
+			<input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2"
+				autocomplete="off" />
+			<input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3"
+				autocomplete="off" />
+
+			<input type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4"
+				autocomplete="off" />
+			<input type="text" id="digit-6" name="digit-6" data-next="digit-7" data-previous="digit-5"
+				autocomplete="off" />
+
+		</form>
+
+		<button id="secondNext">NEXT</button>
+
+		<a onclick="resend()">Click to Send a New Code</a>
+		<p>OR go <a onclick="goToFirst()">back</a></p>
+	</div>
+
+	<div id="third">
+		<img src="img/logo_black.png" alt="" width="70px">
+		<h1>You've been added to SendJack.</h1>
+		<p>We are glad to see you!</p>
+		<button id="thirdNext">Continue</button>
+	</div>
+
+	<div id="fourth">
+		<div class="main">
+			<div class="left animate__animated animate__fadeInDown">
+				<img src="img/logo_black.png" alt="" width="70px">
+				<h1>Setup Complete!</h1>
+				<p>We Just need a few more details</p>
+				<div class="form_entry">
+					<form action="" method="POST">
+						<div class="form__div group1" id="group1">
+							<input required="" type="text" placeholder="First Name" id="firstname"
+								onkeyup="checkEntry1()" />
+							<input required="" type="text" placeholder="Last Name" id="lastname"
+								onkeyup="checkEntry1()" />
+							<button type="button" class="disabledButton" id="detailsFirst" disabled>NEXT</button>
+						</div>
+
+						<div class="form__div group2" id="group2">
+							<input required="" type="number" placeholder="Phone Number" id="phone"
+								onkeyup="checkEntry2()" />
+							<button type="button" class="disabledButton" id="detailsSecond" disabled>NEXT</button>
+						</div>
+
+						<div class="form__div group3" id="group3">
+							<input required="" type="password" placeholder="Password" id="password"
+								onkeyup="checkEntry3(); matchPass()" />
+							<input required="" type="password" placeholder="Confirm Password" id="cpassword"
+								onkeyup="checkEntry3(); matchPass()" />
+
+							<p id="err" style="color: red"></p>
+							<button type="submit" class="disabledButton" id="detailsButt" disabled>SUBMIT</button>
+						</div>
+				</div>
+				</form>
+			</div>
+			<div class="right animate__animated animate__zoomIn">
+
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+	crossorigin="anonymous"></script>
+<script src="js/signup.js"></script>
+<script src="https://kit.fontawesome.com/3af0056356.js" crossorigin="anonymous"></script>
+
+</html>

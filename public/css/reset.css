@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: aliceblue;
+}
+
+i {
+    background-color: #5e4dcd3b;
+    padding: 12px;
+    border-radius: 30px;
+    color: #5e4dcd;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+label {
+    margin: 15px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    margin-top: 20px;
+    min-height: 50px;
+    max-width: 250px;
+    min-width: 200px;
+    padding: 0 1rem;
+    color: #000;
+    font-size: 15px;
+    border: 1px solid #5e4dcd;
+    border-radius: 6px 0 0 6px;
+    background-color: transparent;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.button--submit {
+    margin-top: 20px;
+    min-height: 52px;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #5e4dcd;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.button--submit:hover {
+    background-color: #5e5dcd;
+}
+
+.input:focus,
+.input:focus-visible {
+    border-color: #3898EC;
+    outline: none;
+}
